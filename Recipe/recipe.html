@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Book</h1>
+        <form id="recipeForm">
+            <input type="text" id="title" placeholder="Recipe Title" required>
+
+            <textarea id="ingredients" placeholder="Ingredients" required oninput="autoResize(this)"></textarea>
+
+            <textarea id="instructions" placeholder="Instructions" required oninput="autoResize(this)"></textarea>
+
+            <button type="submit">Save Recipe</button>
+        </form>
+
+        <h2>Recipe List</h2>
+        <ul id="recipeList"></ul>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
